@@ -9,7 +9,7 @@ exec("ipconfig getifaddr en0", $host);
 if (count($host) == 0) exec("ipconfig getifaddr en1", $host);
 
 $host = $host[0];
-$port    = 9999;
+$port    = 8888;
 $master  = WebSocket($host, $port);
 $sockets = array($master);
 $users   = array();
